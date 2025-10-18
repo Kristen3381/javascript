@@ -1,3 +1,179 @@
 console.log("Hello,Purity!");
-var height;
+console.log("Hello,Gibbons!");
+console.log("Hello,Kenny!");
+console.log("Hello,Brain!");
+console.log("Hello,Daisy!");
+let height=120;
+let anotherHeight=height
 console.log(height);
+let weight;
+console.log(anotherHeight);
+weight=60;
+console.log(weight);
+ let steps=100;
+ console.log(steps);
+ steps=200;
+ console.log(steps);
+ steps=steps+70;
+ console.log(steps);
+ let greeting="Hello";
+ let number=1;
+ console.log(greetings);
+ greetings=greetings+number;
+ console.log(greetings);
+ let laura=10;
+ {
+    var daisy=30;
+    console.log(laura);
+    console.log(daisy);
+ }
+ console.log(daisy);
+ function testFunction(){
+    console.log("Hello");
+    console.log("World !");
+ }
+ testFunction();
+ let counter=100;
+ {
+    let counter=200;
+    console.log(counter);
+ }
+ console.log(counter);
+ var h;
+ var w=180;
+ console.log(h);
+ console.log(w);
+ h=120;
+ console.log(h);
+ let rose=8;
+ let lilly=10;
+ let tullip=2;
+ function flowerPrice(y,x){
+    let total=y*x;
+    console.log(total); 
+ }
+ flowerPrice(rose,70);
+ flowerPrice(lilly,50);
+ flowerPrice(tullip,120);
+let IsDataValid=true;
+let IsDataInvalid=false;
+console.log(IsDataValid);
+console.log(IsDataInvalid);
+console.time();
+console.log("Hello ");
+console.timeEnd();
+let string="Learning Java Script";
+console.log(string.slice(0,8));
+console.log(String());
+let B = true+100;
+console.log(b);
+const str= 41+"2";
+console.log(str);
+let testObj={
+   nr:600,
+   str:"Hello"
+};
+console.log(typeof testObj.nr);
+ let user1 = {
+    name: "Calvin",
+    surname: "Hart",
+    age: 66,
+    email: "CalvinMHart@teleworm.us"
+};
+   
+let user2 = {
+    name: "Mateus",
+    surname: "Pinto",
+    age: 21,
+    email: "MateusPinto@dayrep.com"
+};
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]; 
+days[0]="Sunday";
+console.log(days);
+let names = [["Olivia", "Emma", "Mia", "Sofia"], ["William", "James", "Daniel"]];
+console.log(names[0]);
+let users=[
+    {
+    name: "Calvin",
+    surname: "Hart",
+    age: 66,
+    email: "CalvinMHart@teleworm.us"
+},
+ {
+    name: "Mateus",
+    surname: "Pinto",
+    age: 21,
+    email: "MateusPinto@dayrep.com"
+}
+]
+console.log(users[0].name);
+
+ let Names = ["Olivia", "Emma", "Mateo", "Samuel"];
+ Names[1]=1;
+ console.log(Names.length);
+ let otherNames = ["William", "Jane"];
+ let index=otherNames.indexOf("William");
+ console.log(index);
+let allNames = Names.concat( otherNames); 
+console.log(allNames);
+let person = {};
+person.name = "Laura";
+person.surname = "Shavia";
+console.log(`${person.name}  ${person.surname}`);
+let Age=32;
+age=age+1;
+console.log(age);
+
+let Height=180;
+{
+let Height=200;
+Height=200+50;
+}
+console.log(Height);
+let x=100/0;
+{
+   console.log(x);
+
+}
+let y=0*21;
+console.log(y);
+let q="Alice"+10;
+console.log(q);
+let msg="Laura";
+console.log(msg.length);
+let l="abcdefg".slice(2,4);
+console.log(l);
+let n=Number("1234");
+console.log( typeof n);
+const Name="Laura";
+console.log(Name);
+console.log(true, $$, true);
+ const A = false;
+const b = true;
+const c = false;
+const d = true;
+console.log(a && b && c || d); 
+console.log(a && b && (c || d)); 
+ let a = true;
+console.log(a);
+a &&= false;
+console.log(a); 
+console.log(8 **2 - 5 **2);
+ let greetings = "Hi";
+console.log(greetings + " " + "Alice");
+let sentence = "Happy New Year ";
+let newSentence = sentence + 10191;
+console.log(newSentence);
+console.log(typeof newSentence);
+ alert("Hello, World!")
+window.alert("Hello, World! for the second time");
+alert(4 * 7);
+alert(true);
+alert("text 1", "text 2");
+ let remove = confirm("Remove all data?");
+let message = remove ? "Deleting Data" : "Cancelled"
+console.log(message); 
+ let name = window.prompt("What is your name?", "John Doe");
+Name = Name? Name : "anonymous";
+let age = prompt("Hello " + name + " how old are you?");
+alert(name + " is " + age + " years old"); 
