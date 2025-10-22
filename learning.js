@@ -3,177 +3,214 @@ console.log("Hello,Gibbons!");
 console.log("Hello,Kenny!");
 console.log("Hello,Brain!");
 console.log("Hello,Daisy!");
-let height=120;
-let anotherHeight=height
+
+let height = 120;
+let anotherHeight = height;
 console.log(height);
 let weight;
 console.log(anotherHeight);
-weight=60;
+weight = 60;
 console.log(weight);
- let steps=100;
- console.log(steps);
- steps=200;
- console.log(steps);
- steps=steps+70;
- console.log(steps);
- let greeting="Hello";
- let number=1;
- console.log(greetings);
- greetings=greetings+number;
- console.log(greetings);
- let laura=10;
- {
-    var daisy=30;
+
+let steps = 100;
+console.log(steps);
+steps = 200;
+console.log(steps);
+steps = steps + 70;
+console.log(steps);
+
+let greeting = "Hello";
+let num = 1;
+console.log(greeting);
+
+let greetings_combined = greeting + num;
+console.log(greetings_combined);
+
+let laura = 10;
+{
+    var daisy = 30;
     console.log(laura);
     console.log(daisy);
- }
- console.log(daisy);
- function testFunction(){
+}
+console.log(daisy);
+
+function testFunction() {
     console.log("Hello");
     console.log("World !");
- }
- testFunction();
- let counter=100;
- {
-    let counter=200;
+}
+testFunction();
+
+let counter = 100;
+{
+    let counter = 200;
     console.log(counter);
- }
- console.log(counter);
- var h;
- var w=180;
- console.log(h);
- console.log(w);
- h=120;
- console.log(h);
- let rose=8;
- let lilly=10;
- let tullip=2;
- function flowerPrice(y,x){
-    let total=y*x;
-    console.log(total); 
- }
- flowerPrice(rose,70);
- flowerPrice(lilly,50);
- flowerPrice(tullip,120);
-let IsDataValid=true;
-let IsDataInvalid=false;
+}
+console.log(counter);
+
+var h;
+var w = 180;
+console.log(h);
+console.log(w);
+h = 120;
+console.log(h);
+
+let rose = 8;
+let lilly = 10;
+let tullip = 2;
+
+function flowerPrice(y, x) {
+    let total = y * x;
+    console.log(total);
+}
+flowerPrice(rose, 70);
+flowerPrice(lilly, 50);
+flowerPrice(tullip, 120);
+
+let IsDataValid = true;
+let IsDataInvalid = false;
 console.log(IsDataValid);
 console.log(IsDataInvalid);
-console.time();
+
+console.time("timer_label");
 console.log("Hello ");
-console.timeEnd();
-let string="Learning Java Script";
-console.log(string.slice(0,8));
+console.timeEnd("timer_label");
+
+let string = "Learning Java Script";
+console.log(string.slice(0, 8));
+
 console.log(String());
-let B = true+100;
-console.log(b);
-const str= 41+"2";
+
+let B_fixed = true + 100;
+console.log(B_fixed);
+
+const str = 41 + "2";
 console.log(str);
-let testObj={
-   nr:600,
-   str:"Hello"
+
+let testObj = {
+    nr: 600,
+    str: "Hello"
 };
 console.log(typeof testObj.nr);
- let user1 = {
+
+let user1 = {
     name: "Calvin",
     surname: "Hart",
     age: 66,
     email: "CalvinMHart@teleworm.us"
 };
-   
+
 let user2 = {
     name: "Mateus",
     surname: "Pinto",
-    age: 21,
-    email: "MateusPinto@dayrep.com"
-};
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]; 
-days[0]="Sunday";
-console.log(days);
-let names = [["Olivia", "Emma", "Mia", "Sofia"], ["William", "James", "Daniel"]];
-console.log(names[0]);
-let users=[
-    {
-    name: "Calvin",
-    surname: "Hart",
-    age: 66,
-    email: "CalvinMHart@teleworm.us"
-},
- {
-    name: "Mateus",
-    surname: "Pinto",
-    age: 21,
-    email: "MateusPinto@dayrep.com"
+    age: 21,}
+    let number =prompt("Enter a random number");
+if(number > 90 && number < 110) {
+    alert("Bingo!");
+} else {
+    alert("Miss");
 }
-]
-console.log(users[0].name);
+const readline = require('readline');
 
- let Names = ["Olivia", "Emma", "Mateo", "Samuel"];
- Names[1]=1;
- console.log(Names.length);
- let otherNames = ["William", "Jane"];
- let index=otherNames.indexOf("William");
- console.log(index);
-let allNames = Names.concat( otherNames); 
-console.log(allNames);
-let person = {};
-person.name = "Laura";
-person.surname = "Shavia";
-console.log(`${person.name}  ${person.surname}`);
-let Age=32;
-age=age+1;
-console.log(age);
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-let Height=180;
-{
-let Height=200;
-Height=200+50;
+let contacts = [{
+    name: "Maxwell Wright",
+    phone: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+}, {
+    name: "Raja Villarreal",
+    phone: "0866 398 2895",
+    email: "posuere.vulputate@sed.com"
+}, {
+    name: "Helen Richards",
+    phone: "0800 1111",
+    email: "libero@convallis.edu"
+}];
+
+function showMenu() {
+    console.log('\n--- Contact List Menu ---');
+    console.log('1. Type "first" to show the first contact.');
+    console.log('2. Type "last" to show the last contact.');
+    console.log('3. Type "new" to add a new contact.');
+    console.log('4. Type "exit" to quit the program.');
+    console.log('-------------------------');
+
+    rl.question('Enter your choice: ', handleChoice);
 }
-console.log(Height);
-let x=100/0;
-{
-   console.log(x);
 
+function showFirstContact() {
+    if (contacts.length === 0) {
+        console.log("❌ The contact list is empty.");
+        return;
+    }
+    const first = contacts[0];
+    console.log('\n✅ First Contact:');
+    console.log(`Name: ${first.name}, Phone: ${first.phone}, Email: ${first.email}`);
 }
-let y=0*21;
-console.log(y);
-let q="Alice"+10;
-console.log(q);
-let msg="Laura";
-console.log(msg.length);
-let l="abcdefg".slice(2,4);
-console.log(l);
-let n=Number("1234");
-console.log( typeof n);
-const Name="Laura";
-console.log(Name);
-console.log(true, $$, true);
- const A = false;
-const b = true;
-const c = false;
-const d = true;
-console.log(a && b && c || d); 
-console.log(a && b && (c || d)); 
- let a = true;
-console.log(a);
-a &&= false;
-console.log(a); 
-console.log(8 **2 - 5 **2);
- let greetings = "Hi";
-console.log(greetings + " " + "Alice");
-let sentence = "Happy New Year ";
-let newSentence = sentence + 10191;
-console.log(newSentence);
-console.log(typeof newSentence);
- alert("Hello, World!")
-window.alert("Hello, World! for the second time");
-alert(4 * 7);
-alert(true);
-alert("text 1", "text 2");
- let remove = confirm("Remove all data?");
-let message = remove ? "Deleting Data" : "Cancelled"
-console.log(message); 
- let name = window.prompt("What is your name?", "John Doe");
-Name = Name? Name : "anonymous";
-let age = prompt("Hello " + name + " how old are you?");
-alert(name + " is " + age + " years old"); 
+
+function showLastContact() {
+    if (contacts.length === 0) {
+        console.log("❌ The contact list is empty.");
+        return;
+    }
+    const last = contacts[contacts.length - 1];
+    console.log('\n✅ Last Contact:');
+    console.log(`Name: ${last.name}, Phone: ${last.phone}, Email: ${last.email}`);
+}
+
+function addNewContact() {
+    rl.question("Enter Name: ", (name) => {
+        rl.question("Enter Phone: ", (phone) => {
+            rl.question("Enter Email: ", (email) => {
+
+                const newName = name.trim();
+                const newPhone = phone.trim();
+                const newEmail = email.trim();
+
+                if (newName && newPhone && newEmail) {
+                    contacts.push({
+                        name: newName,
+                        phone: newPhone,
+                        email: newEmail
+                    });
+                    console.log(`\n🎉 Success! Contact "${newName}" added.`);
+                } else {
+                    console.log("\n❌ Error: Cannot add contact. Name, phone, and email are required.");
+                }
+
+                showMenu();
+            });
+        });
+    });
+}
+
+function handleChoice(choice) {
+    const action = choice.toLowerCase().trim();
+
+    switch (action) {
+        case 'first':
+            showFirstContact();
+            showMenu();
+            break;
+        case 'last':
+            showLastContact();
+            showMenu();
+            break;
+        case 'new':
+            addNewContact();
+            break;
+        case 'exit':
+            console.log('👋 Program exiting. Goodbye!');
+            rl.close();
+            break;
+        default:
+            console.log(`\n❓ Invalid choice: "${choice}". Please type "first", "last", "new", or "exit".`);
+            showMenu();
+            break;
+    }
+}
+
+showMenu();
