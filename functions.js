@@ -53,3 +53,46 @@ return first+second;
  let names = ["Alice", "Bob", "Eve", "John"];
 let No= getElements(names,1);
 console.log(No);
+function factorial (n) {
+     let result = 1;
+     while (n > 1) {
+      result *= n;
+      n--;
+     }
+     return result;
+}
+console.log(factorial(6)); 
+function showMessage(message) {
+     console.log(`Message: ${message}`);
+}
+let sm = showMessage;
+sm("Hello love");
+console.log(typeof sm);
+function doNothing() {
+     return undefined;
+}
+let a = doNothing(); 
+let b = doNothing;   
+console.log(typeof a);
+console.log(typeof b); 
+function add(a,b){
+    return a +b
+}
+function multiply(a,b){
+    return a*b
+}
+function operation(func,first,second){
+return func(first,second);
+}
+console.log(operation(add, 10, 20))
+ let inner = function() {
+     console.log('inner 1');
+}
+let outer = function(callback) {
+     console.log('outer 1');
+     callback();
+     console.log('outer 2');
+}
+console.log('test 1');
+outer(inner);
+console.log('test 2'); 
